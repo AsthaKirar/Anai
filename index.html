@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body>
+    <div id="loader">
+        <svg class="g-header__logo-svg" viewBox="0 0 194.8 44.5"><path class="g-header__logo-path" d="M90.1,3h0.2c5.4,0.1,6.3,0.8,6.3,4.7V33l-32-32.8l-0.1-0.1h-0.9v37.4c0,2.6-0.9,4.2-5.3,4.2h-0.5v1.8H74v-1.8h-0.3 c-5.6,0-6.5-0.8-6.5-5.6V11.4l32.1,33l0.1,0.1h0.9V6.2c0-2.2,0.6-3.2,5.9-3.2h0.3V1.2H90.1V3z"></path><path class="g-header__logo-path" d="M45.2,41.7c-3.3,0-4.4-0.7-5.9-4L23.1,0.2L23,0h-0.6L7.3,35.3c-2.4,5.8-2.8,6.4-7,6.5H0v1.8h16.1v-1.8h-1.3 c-3.7,0-5.2-0.6-5.2-2.2c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.1,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4 c0,1.6-1.1,2-5,2h-2v1.8h19v-1.8h-0.2V41.7z M14.8,26.5l6.6-15l6.6,15H14.8z"></path><path class="g-header__logo-path" d="M194.6,3h0.3V1.2H178V3h0.2c3.8,0.2,4.8,1.2,4.8,4.6v28.6c0,4.4-0.8,5.3-4.8,5.5H178v1.8h16.9v-1.8h-0.3c-4,0-5.5-0.8-5.5-5 V8.2C189.1,3.8,190.6,3,194.6,3z"></path><path class="g-header__logo-path" d="M156.1,37.7L139.9,0.2V0h-0.6l-15.2,35.3c-2.4,5.8-2.8,6.4-7,6.5h-0.2v1.8H133v-1.8h-1.3c-3.7,0-5.2-0.6-5.2-2.2 c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.2,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4c0,1.6-1.1,2-5,2h-2v1.8h19 v-1.8H162C158.7,41.8,157.6,41,156.1,37.7z M144.9,26.5h-13.3l6.6-15L144.9,26.5z"></path></svg>
+    </div>
+    <div id="nav">
+        <div id="nav-part1">
+            <svg class="g-header__logo-svg" viewBox="0 0 194.8 44.5"><path class="g-header__logo-path" d="M90.1,3h0.2c5.4,0.1,6.3,0.8,6.3,4.7V33l-32-32.8l-0.1-0.1h-0.9v37.4c0,2.6-0.9,4.2-5.3,4.2h-0.5v1.8H74v-1.8h-0.3 c-5.6,0-6.5-0.8-6.5-5.6V11.4l32.1,33l0.1,0.1h0.9V6.2c0-2.2,0.6-3.2,5.9-3.2h0.3V1.2H90.1V3z"></path><path class="g-header__logo-path" d="M45.2,41.7c-3.3,0-4.4-0.7-5.9-4L23.1,0.2L23,0h-0.6L7.3,35.3c-2.4,5.8-2.8,6.4-7,6.5H0v1.8h16.1v-1.8h-1.3 c-3.7,0-5.2-0.6-5.2-2.2c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.1,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4 c0,1.6-1.1,2-5,2h-2v1.8h19v-1.8h-0.2V41.7z M14.8,26.5l6.6-15l6.6,15H14.8z"></path><path class="g-header__logo-path" d="M194.6,3h0.3V1.2H178V3h0.2c3.8,0.2,4.8,1.2,4.8,4.6v28.6c0,4.4-0.8,5.3-4.8,5.5H178v1.8h16.9v-1.8h-0.3c-4,0-5.5-0.8-5.5-5 V8.2C189.1,3.8,190.6,3,194.6,3z"></path><path class="g-header__logo-path" d="M156.1,37.7L139.9,0.2V0h-0.6l-15.2,35.3c-2.4,5.8-2.8,6.4-7,6.5h-0.2v1.8H133v-1.8h-1.3c-3.7,0-5.2-0.6-5.2-2.2 c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.2,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4c0,1.6-1.1,2-5,2h-2v1.8h19 v-1.8H162C158.7,41.8,157.6,41,156.1,37.7z M144.9,26.5h-13.3l6.6-15L144.9,26.5z"></path></svg>
+        </div>
+        
+        <div id="nav-part3">
+            <i class="ri-more-2-fill"></i>
+        </div>
+    </div>
+
+    <div id="main">
+    
+        <div id="uperpage1">
+                <img src="./img-1.jpg" alt="">
+                <div id="overlay">
+                    <div id="menu">
+                        <div id="menu-part1">
+                            <svg class="g-menu__logo-svg" viewBox="0 0 194.8 44.5" data-v-28affac0=""><path class="g-menu__logo-path" d="M90.1,3h0.2c5.4,0.1,6.3,0.8,6.3,4.7V33l-32-32.8l-0.1-0.1h-0.9v37.4c0,2.6-0.9,4.2-5.3,4.2h-0.5v1.8H74v-1.8h-0.3 c-5.6,0-6.5-0.8-6.5-5.6V11.4l32.1,33l0.1,0.1h0.9V6.2c0-2.2,0.6-3.2,5.9-3.2h0.3V1.2H90.1V3z" data-v-28affac0=""></path><path class="g-menu__logo-path" d="M45.2,41.7c-3.3,0-4.4-0.7-5.9-4L23.1,0.2L23,0h-0.6L7.3,35.3c-2.4,5.8-2.8,6.4-7,6.5H0v1.8h16.1v-1.8h-1.3 c-3.7,0-5.2-0.6-5.2-2.2c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.1,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4 c0,1.6-1.1,2-5,2h-2v1.8h19v-1.8h-0.2V41.7z M14.8,26.5l6.6-15l6.6,15H14.8z" data-v-28affac0=""></path><path class="g-menu__logo-path" d="M194.6,3h0.3V1.2H178V3h0.2c3.8,0.2,4.8,1.2,4.8,4.6v28.6c0,4.4-0.8,5.3-4.8,5.5H178v1.8h16.9v-1.8h-0.3c-4,0-5.5-0.8-5.5-5 V8.2C189.1,3.8,190.6,3,194.6,3z" data-v-28affac0=""></path><path class="g-menu__logo-path" d="M156.1,37.7L139.9,0.2V0h-0.6l-15.2,35.3c-2.4,5.8-2.8,6.4-7,6.5h-0.2v1.8H133v-1.8h-1.3c-3.7,0-5.2-0.6-5.2-2.2 c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.2,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4c0,1.6-1.1,2-5,2h-2v1.8h19 v-1.8H162C158.7,41.8,157.6,41,156.1,37.7z M144.9,26.5h-13.3l6.6-15L144.9,26.5z" data-v-28affac0=""></path></svg>
+                        </div>
+                        <div id="menu-part2">
+                            <h5>Close</h5>
+                            <div id="menu-part21">
+                                <i class="ri-circle-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <div class="elem1">
+                            <h3>869-2401 <br>
+                                2082 Akababa,Minami-ogunl,<br>
+                            Aso-gun, Kumamolo,Japan</h3>
+                            <h4>Facebook <br>
+                            Instagram</h4>
+                            
+        
+                        </div>
+                        <div class="elem2">
+                            <h3>About</h3>
+                            <h3>Brands</h3>
+                            <h3>Projects</h3>
+                            <h3>Company</h3>
+                            <h3>Contact</h3>
+
+                        </div>
+
+                    </div>
+                    <div id="bottom">
+                        <h4>anai@fillinglife.co</h4>
+                        <div class="icon">
+                            <i class="ri-circle-line"></i>
+                            <h5>Oguni-Sugi</h5>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="page1">
+            <div id="nav-page1">
+                <h4>about</h4>
+                <h4>brands</h4>
+                <h4>projects</h4>
+                <h4>company</h4>
+                <h4>contact</h4>
+            </div>
+                  <h1>Cultivate for <br>Posterity</h1>
+            <!-- <h2>Posterity</h2> -->
+            
+        </div>
+        <div id="page2">
+            <img src="img-3.webp" alt="">
+        </div>
+        <div id="page3">
+            <div class="left">
+                <div id="img-container1">
+                    <img src="./img-31.jpg" alt="">
+
+            
+                </div>
+                <div id="img-container2">
+                    <img src="./img-32.avif" alt="">
+                </div>
+                <div id="img-container3">
+                    <img src="./img-33.jpg" alt="">
+                </div>
+                <div id="img-container4">
+                    <img src="./img-34.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <h4>We Cultivate for Posterity
+                </h4>
+                <p>Anai Wood Factory, established in 1964, is a small sawmill <br> with strong roots in the Aso <region class="br"></region> We specialize in manufacturing and selling building materials made <br> from the locally inherited Oguni cedar and cypress,<br> and we also have a brand for consumer good. 
+                    Our aspiration is to pass on fertile land and a thriving sea to future generations. To achieve this goal, we conduct our business with a strong commitment to the well-being of the bountiful forests in the area.
+
+                </p>
+                <div class="about">
+                    <i class="ri-circle-line"></i>
+
+                    <h3>About us</h3>
+                </div>
+            </div>
+        </div>
+        <div id="page4">
+            <h1>Brands</h1>
+           <div id="page4-container">
+            <div class="page4-part1">
+                <h3>FIL</h3>
+                <p>"FIL" is a life style brand based in Aso'sMinamiogun iregion.Through FIL,we offer furniture and fragrances that show case the uniqu equal ities of  local timber,and  FIL’s flags hipsto real soserve sasahub for creative craftsmanship.
+                </p>
+                <div class="kuma">
+                    <h3>Take no Kuma</h3>
+                    <p>Minamioguni Town in Kuma moto Prefecture is blessed with clean spring water fromMt.Aso.The"Take no Kuma"cafe is nestl edwith in the picture squecountry side landscape of Minamioguni.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="page4-part2">
+                <div class="img-div1">
+                <img src="./img-41.webp" alt="">
+            </div>
+                <div class="img-div2">
+                    <img src="./img-42.webp" alt="">
+                </div>  
+            </div>
+            <div class="page4-part3">
+                <h3>Detail</h3>
+                <div id="arrow">
+                    <div class="arrow11">
+                        <i class="ri-arrow-left-line"></i>
+
+                    </div>
+                    <div class="arrow12">
+                        
+                        <i class="ri-arrow-right-line"></i>
+
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div id="page5">
+            <div id="page5-part1">
+                
+                <h1>Latest <br> Projects</h1>
+                <div class="box">
+                    <img src="./img-56.jfif" alt="">
+                </div>
+<div id="second">
+    <div id="second-img1">
+        <img src="./hero2.webp" alt="">
+    </div>
+    <div id="second-img2">
+        <img src="./hero3.webp" alt="">
+    </div>
+    <div id="second-img3">
+        <img src="./hero4.webp" alt="">
+    </div>
+    <div id="second-img4">
+        <img src="./hero.webp" alt="">
+    </div>
+    <div id="second-img5">
+        <img src="./hero5.webp" alt="">
+    </div>
+
+
+</div>
+            </div>
+            <div id="page5-part2">
+                <div id="part2-container1">
+                    <h3>Higo Bank</h3>
+                </div>
+                <div id="part2-container2">
+                    <h3>OIP</h3>
+                </div>
+                <div id="part2-container3">
+                    <h3>URUMA NO OUCHI</h3>
+                </div>
+                <div id="part2-container4">
+                    <h3>shichusankyo</h3>
+                </div>
+                <div id="part2-container5">
+                    <h3>Mikanyama</h3>
+                </div>
+                <div id="part2-bottom">
+                    <h1>Shichusankyo</h1>
+                    <p>A new Shinsan Jutaku model house planned  for <br> Kumanichi RKK Housing Exhibition. <br> The creation of a living environment connected to nature, such as wood, wind, and light, is the <br>characteristic of this house.
+
+                    </p>
+                </div>
+                
+            </div>
+            <div id="page5-part3">
+                <div class="project1">
+                    <i class="ri-circle-line"></i>
+                    <h2>All Project</h2>
+                </div>
+                <div class="project2">
+                    <i class="ri-circle-line"></i>
+                    <h2>View details</h2>
+                </div>
+
+            </div>
+
+            
+            
+        </div>
+        <div id="page6">
+            <div id="page6-part1">
+                <div class="img1">
+                    <img src="./img-52.webp" alt="">
+                </div>
+                <div class="img2">
+                    <img src="./img-53.webp" alt="">
+                </div>
+            </div>
+            <div id="page6-part2">
+                <img src="./img-55.webp" alt="">
+            </div>
+            <div id="page6-part3">
+                <div class="img31">
+                    <img src="./img-51.webp" alt="">
+                </div>
+                <div class="img32">
+                    <img src="./img-54.webp" alt="">
+                </div>
+            </div>
+            <div id="page6-overlay">
+                <h5>The Legacy We treasure</h5>
+                <h1>Oguni-Sugi</h1>
+                <p>Our main product is the Oguni cedar, which is reputed as an <br> exceptional building material. Let's delve deeper into the story <br> of this wood originating from the Minamioguni region.
+                </p>
+
+            </div>
+        
+        </div>
+        <div id="page7">
+            <div id="page7-part1">
+                <h3>About</h3>
+                <h3>Brands</h3>
+                <h3>Projects</h3>
+                <h3>Company</h3>
+                <h3>Contact</h3>
+                <svg class="g-footer__logo-svg" viewBox="0 0 194.8 44.5"><path class="g-footer__logo-path" d="M90.1,3h0.2c5.4,0.1,6.3,0.8,6.3,4.7V33l-32-32.8l-0.1-0.1h-0.9v37.4c0,2.6-0.9,4.2-5.3,4.2h-0.5v1.8H74v-1.8h-0.3 c-5.6,0-6.5-0.8-6.5-5.6V11.4l32.1,33l0.1,0.1h0.9V6.2c0-2.2,0.6-3.2,5.9-3.2h0.3V1.2H90.1V3z" style="opacity: 1; visibility: inherit;"></path><path class="g-footer__logo-path" d="M45.2,41.7c-3.3,0-4.4-0.7-5.9-4L23.1,0.2L23,0h-0.6L7.3,35.3c-2.4,5.8-2.8,6.4-7,6.5H0v1.8h16.1v-1.8h-1.3 c-3.7,0-5.2-0.6-5.2-2.2c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.1,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4 c0,1.6-1.1,2-5,2h-2v1.8h19v-1.8h-0.2V41.7z M14.8,26.5l6.6-15l6.6,15H14.8z" style="opacity: 1; visibility: inherit;"></path><path class="g-footer__logo-path" d="M194.6,3h0.3V1.2H178V3h0.2c3.8,0.2,4.8,1.2,4.8,4.6v28.6c0,4.4-0.8,5.3-4.8,5.5H178v1.8h16.9v-1.8h-0.3c-4,0-5.5-0.8-5.5-5 V8.2C189.1,3.8,190.6,3,194.6,3z" style="opacity: 1; visibility: inherit;"></path><path class="g-footer__logo-path" d="M156.1,37.7L139.9,0.2V0h-0.6l-15.2,35.3c-2.4,5.8-2.8,6.4-7,6.5h-0.2v1.8H133v-1.8h-1.3c-3.7,0-5.2-0.6-5.2-2.2 c0.2-1.1,0.5-2.2,1-3.3c0.1-0.3,0.2-0.6,0.3-0.9l2.4-5.5h16.3l3.2,7.1l0.1,0.2c0.4,0.8,0.6,1.6,0.6,2.4c0,1.6-1.1,2-5,2h-2v1.8h19 v-1.8H162C158.7,41.8,157.6,41,156.1,37.7z M144.9,26.5h-13.3l6.6-15L144.9,26.5z" style="opacity: 1; visibility: inherit;"></path></svg>
+            </div>
+            <div id="page7-part2">
+                <div id="post">
+                    <h3>869-2401 <br>2082 Akababa, Minami-ogunl,<br>Aso-gun,Kumamoto,Japan
+                    </h3>
+                    <div id="face">
+                        <h3>Facebook</h3>
+                        <h3>Instagram</h3>
+                    </div>
+                </div>
+                <h2>anai@fillinglife.co</h2>
+                <h4>Privacy Policy</h4>
+
+            </div>
+            <div id="page7-part3">
+                <h1>EN</h1>
+                <h2>©2024</h2>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    
+    
+</body>
+</html>
